@@ -1,0 +1,10 @@
+<%- include('partials/header') -%>
+
+<h1>Home</h1>
+<p><%= homeContent %></p>
+
+<% postContent.forEach(function(e){  %>
+    <h1><%=e.inputTitle %></h1>
+    <p><%=e.bodyTitle%></p>
+<% }) %>
+<%- include('partials/footer') -%>
